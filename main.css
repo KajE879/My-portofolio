@@ -1,3 +1,6 @@
+html{
+    scroll-behavior: smooth;
+}
 body{
     background-image: url(img/bblack.jpg);
     background-color: #000000;
@@ -38,6 +41,11 @@ nav ul {
 nav a {
     color: white;
     text-decoration: none;
+    transition: color 500ms;
+}
+nav a:hover{
+    color: #3b82f6;
+    transition: color 500ms;
 }
 .text-blue{
     color: #3b82f6;
@@ -84,6 +92,11 @@ nav a {
     background-color: #1a1a1a;
     border-radius: 7.5px;
     padding: 0px 25px;
+    transition: background-color 500ms;
+}
+.container-main2 button:hover{
+    background-color: #ffffff33;
+    transition: background-color 500ms;
 }
 .container-main2 button img{
     width: 16px;
@@ -92,7 +105,7 @@ nav a {
 .container-tech{
     display: flex;
     flex-direction: column;
-    margin: 450px 0px 0px 280px;
+    margin: 350px 0px 0px 280px;
 }
 .tech-disc{
     display: flex;
@@ -116,6 +129,11 @@ nav a {
     padding: 10px;
     border-radius: 8px;
     width: 275px;
+    transition: background-color 500ms;
+}
+.tech:hover{
+    background-color: #ffffff2f;
+    transition: background-color 500ms;
 }
 .tech-HTML{
     display: flex;
@@ -168,12 +186,10 @@ nav a {
     gap: 15px;
     margin-top: 20px;
 }
-
-
-.Main-projects{
+.Main{
     margin: 100px 0px 0px 280px;
 }
-.Main-projects h1{
+.Main h1{
     font-weight: 700;
     font-size: 48px;
 }
@@ -210,4 +226,30 @@ nav a {
 .Project-nb h2{
     font-size: 30px;
     font-weight: 600px;
+}
+table{
+    color: white;
+    text-align: center;
+    width: 500px;
+    height: 250px;
+    border-collapse: collapse;
+    margin-top: 30px;
+}
+thead{
+    height: 60px; 
+}
+th{
+    background-color: #3b83f680;
+}
+td{
+    background-color: #1a1a1a;
+    transition: background-color 500ms;
+    border-bottom: 1px solid #4d4d4d;
+}
+table tr:hover td {
+    background-color: #ffffff2f;
+    transition: background-color 500ms;
+}
+.Main p{
+    font-size: 14px;
 }
